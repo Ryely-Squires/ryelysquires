@@ -1,0 +1,96 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #83a4d4, #b6fbff); 
+    color: #333;
+}
+
+header {
+    background-color: #003ADA;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+    margin: 2em auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    margin-top: 2em;
+}
+
+.service {
+    margin-bottom: 2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.service p {
+    margin-top: 0.5em;
+    color: #555;
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+    margin: 2em auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer h2 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.social-link i {
+    margin-right: 0.5em;
+}
+
+.social-link:hover {
+    background-color: #45a049;
+}
