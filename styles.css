@@ -1,18 +1,33 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #83a4d4, #b6fbff); 
+    background: linear-gradient(to right, #283048, #859398); 
     color: #333;
 }
 
 header {
-    background-color: #003ADA;
+    background-color: #0044CC;
     color: white;
     padding: 1em;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    padding: 0.5em;
+    font-size: 2em;
+    animation: slideInFromTop 1s ease-in-out;
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 main {
@@ -23,14 +38,25 @@ main {
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .button-container {
     margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .service {
     margin-bottom: 2em;
+    flex: 1 1 200px;
+    margin: 1em;
 }
 
 .button {
@@ -41,12 +67,18 @@ main {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
     background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.button:focus, .button:active {
+    background-color: #3e8e41;
+    outline: none;
 }
 
 .service p {
@@ -57,11 +89,13 @@ main {
 footer {
     padding: 2em;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: #f0f0f0;
+    color: #333;
     margin: 2em auto;
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in;
 }
 
 footer h2 {
@@ -80,11 +114,10 @@ footer h2 {
     align-items: center;
     margin: 0.5em;
     padding: 0.5em 1em;
-    background-color: #4CAF50;
-    color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    color: white;
+    transition: transform 0.3s;
 }
 
 .social-link i {
@@ -92,5 +125,64 @@ footer h2 {
 }
 
 .social-link:hover {
-    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.social-link-facebook {
+    background-color: #1877F2;
+}
+
+.social-link-facebook:hover {
+    background-color: #155DB2;
+}
+
+.social-link-twitter {
+    background-color: #1DA1F2;
+}
+
+.social-link-twitter:hover {
+    background-color: #1A91DA;
+}
+
+.social-link-instagram {
+    background: linear-gradient(45deg, #833AB4, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    color: white;
+}
+
+.social-link-instagram:hover {
+    background: linear-gradient(45deg, #6D207B, #E60000, #D64524, #E7690C, #E79E2A, #EBC86F);
+}
+
+.social-link-linkedin {
+    background-color: #0077B5;
+}
+
+.social-link-linkedin:hover {
+    background-color: #005C8A;
+}
+
+.social-link-github {
+    background-color: #333;
+}
+
+.social-link-github:hover {
+    background-color: #24292E;
+}
+
+.social-link-discord {
+    background-color: #5865F2;
+}
+
+.social-link-discord:hover {
+    background-color: #4853C8;
+}
+
+@media (max-width: 600px) {
+    main, footer {
+        margin: 1em;
+        padding: 1em;
+    }
+    .button-container {
+        flex-direction: column;
+    }
 }
