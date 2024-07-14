@@ -63,8 +63,6 @@ main {
     display: inline-block;
     padding: 0.5em 1em;
     margin: 0.5em;
-    background-color: #4CAF50;
-    color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
@@ -72,13 +70,65 @@ main {
 }
 
 .button:hover {
-    background-color: #45a049;
     transform: scale(1.05);
 }
 
 .button:focus, .button:active {
-    background-color: #3e8e41;
     outline: none;
+}
+
+.button-jellyfin {
+    background: linear-gradient(135deg, #31A2AC, #764BA2); /* Gradient from teal to purple */
+    color: white;
+}
+
+.button-jellyfin:hover {
+    background: linear-gradient(135deg, #2C8D96, #6A4391); /* Slightly darker gradient for hover */
+}
+
+.button-jellyseerr {
+    background: linear-gradient(135deg, #764BA2, #31A2AC); /* Gradient with purple to blue */
+    color: white;
+}
+
+.button-jellyseerr:hover {
+    background: linear-gradient(135deg, #6A4391, #2C8D96); /* Slightly darker gradient for hover */
+}
+
+.button-minecraft {
+    background: linear-gradient(to bottom, #34A853, #8B4513); /* Gradient with green to brown, top to bottom */
+    color: white;
+}
+
+.button-minecraft:hover {
+    background: linear-gradient(to bottom, #2E8B57, #A0522D); /* Slightly darker gradient for hover, top to bottom */
+}
+
+.button-nintendo {
+    background-color: #e70819;
+    color: white;
+}
+
+.button-nintendo:hover {
+    background-color: #c60616;
+}
+
+.button-photos {
+    background-color: #9C27B0;
+    color: white;
+}
+
+.button-photos:hover {
+    background-color: #8E24AA;
+}
+
+.button-cloud {
+    background: linear-gradient(135deg, #1E90FF, #FF6347, #FFD700); /* Gradient with blue, red, and gold */
+    color: white;
+}
+
+.button-cloud:hover {
+    background: linear-gradient(135deg, #1C86EE, #FF4500, #FFC125); /* Slightly darker gradient for hover */
 }
 
 .service p {
